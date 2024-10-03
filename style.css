@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.schedule, .to-do, .notes-priorities {
+    margin: 20px 0;
+}
+
+.schedule ul, .to-do ul, .notes-priorities ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.schedule ul li, .to-do ul li, .notes-priorities ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.to-do input[type="text"], .to-do select, .notes-priorities textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.to-do button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.to-do button:hover {
+    background-color: #0056b3;
+}
+
+.notes-priorities textarea {
+    height: 100px;
+}
+/* Additional styles for tasks */
+#task-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#task-list li button.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#task-list li button.delete-btn:hover {
+    background-color: darkred;
+}
